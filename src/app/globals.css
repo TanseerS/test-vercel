@@ -1,0 +1,42 @@
+/* src/app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0a0e14;
+  --surface:   #111720;
+  --border:    #1e2a38;
+  --border-hi: #2e3f55;
+  --text:      #c9d6e3;
+  --text-dim:  #5a7494;
+  --text-hi:   #e8f0f8;
+  --accent:    #00c4ff;
+  --accent-dim:#003d52;
+  --green:     #00e676;
+  --green-dim: #003318;
+  --red:       #ff4d4d;
+  --red-dim:   #330f0f;
+  --yellow:    #ffc107;
+  --yellow-dim:#332800;
+  --radius:    6px;
+  --mono:      'IBM Plex Mono', monospace;
+  --sans:      'IBM Plex Sans', sans-serif;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 3px; }
+
+/* Selection */
+::selection { background: var(--accent-dim); color: var(--accent); }
