@@ -60,7 +60,7 @@ export const checkHealth = () => request("/api/v1/health");
 export const checkUsername = (username: string) =>
   request(`/api/v1/username/check?username=${encodeURIComponent(username)}`);
 
-export const getVendors = () => request("/public/v1/vendors");
+export const getVendors = () => request("/api/v1/vendors");
 
 // ── Protected endpoint ────────────────────────────────────────────────────────
 
